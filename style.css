@@ -1264,3 +1264,224 @@ body {
         letter-spacing: 3px;
     }
 }
+/* COSAS QUE ME RECUERDAN A TI */
+
+.recuerdos-danahi {
+    width: 90%;
+    max-width: 950px;
+    margin: 80px auto;
+    padding: 70px 45px;
+
+    background: rgba(255, 190, 220, 0.06);
+    border: 1px solid rgba(255, 190, 220, 0.22);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(255, 120, 190, 0.15),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+}
+
+.recuerdos-danahi h2 {
+    font-size: 42px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.4);
+}
+
+.intro-recuerdos {
+    max-width: 650px;
+    margin: 0 auto 55px;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* TARJETAS */
+
+.recuerdos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 800px;
+    margin: auto;
+}
+
+.recuerdo {
+    padding: 32px 28px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 190, 220, 0.16);
+
+    border-radius: 24px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.recuerdo:hover {
+    transform: translateY(-7px);
+
+    background: rgba(255, 150, 200, 0.07);
+
+    box-shadow:
+        0 12px 35px rgba(255, 120, 190, 0.18);
+}
+
+
+/* ICONOS */
+
+.recuerdo-icono {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255, 150, 200, 0.25));
+}
+
+
+/* TITULOS */
+
+.recuerdo h3 {
+    margin-bottom: 12px;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    color: #ffd1e8;
+}
+
+.recuerdo p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* TARJETA ESPECIAL */
+
+.recuerdo-especial {
+    grid-column: 1 / -1;
+
+    max-width: 500px;
+
+    width: 100%;
+
+    margin: 10px auto 0;
+
+    background: rgba(255, 150, 200, 0.07);
+
+    border-color: rgba(255, 175, 212, 0.35);
+
+    box-shadow:
+        0 0 30px rgba(255, 120, 190, 0.12);
+}
+
+.recuerdo-especial .recuerdo-icono {
+    font-size: 48px;
+}
+
+.recuerdo-especial h3 {
+    font-size: 27px;
+}
+
+
+/* FINAL */
+
+.recuerdos-final {
+    margin-top: 65px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid rgba(255, 190, 220, 0.18);
+}
+
+.recuerdos-final p {
+    font-size: 18px;
+
+    margin-bottom: 18px;
+}
+
+.recuerdos-final h3 {
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 24px;
+
+    line-height: 1.6;
+
+    font-weight: normal;
+
+    color: #ffd1e8;
+
+    text-shadow:
+        0 0 12px rgba(255, 130, 200, 0.3);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 750px) {
+
+    .recuerdos-danahi {
+        padding: 50px 22px;
+    }
+
+    .recuerdos-danahi h2 {
+        font-size: 33px;
+    }
+
+    .intro-recuerdos {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .recuerdos-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .recuerdo {
+        padding: 28px 22px;
+    }
+
+    .recuerdo-especial {
+        grid-column: auto;
+        width: auto;
+    }
+
+    .recuerdo h3 {
+        font-size: 21px;
+    }
+
+    .recuerdo p {
+        font-size: 16px;
+    }
+
+    .recuerdos-final {
+        margin-top: 50px;
+    }
+
+    .recuerdos-final h3 {
+        font-size: 21px;
+    }
+}
