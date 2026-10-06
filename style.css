@@ -742,3 +742,6 @@ body {
     display: none;
     margin-top: 55px;
 }
+.carta-secreta {
+    display: none !important;
+}
