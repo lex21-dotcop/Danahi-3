@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +12,55 @@
 
 <body>
 
-    <div class="contenedor">
+    <div class="corazones">
+        ❤️
+        💕
+        ❤️
+        💗
+        ❤️
+    </div>
+
+    <main class="portada">
 
         <div class="corazon">❤️</div>
 
-        <h1>Para Danahi</h1>
+        <p class="pequeno">
+            PARA LA PERSONA QUE CAMBIÓ MI HISTORIA
+        </p>
 
-        <p>
+        <h1>
+            Danahi
+        </h1>
+
+        <div class="linea"></div>
+
+        <p class="frase">
             Hay historias que comienzan de una manera inesperada...
         </p>
 
-        <p>
-            Y la nuestra comenzó con un match.
+        <p class="frase">
+            Y la nuestra comenzó con un <strong>match.</strong>
         </p>
 
-    </div>
+        <button onclick="mostrarMensaje()">
+            Tengo algo que decirte ❤️
+        </button>
+
+        <p id="mensaje"></p>
+
+    </main>
+
+    <script>
+
+        function mostrarMensaje() {
+
+            document.getElementById("mensaje").innerHTML =
+            "Y desde aquel 14 de junio, sin saberlo, comenzamos a escribir nuestra historia. ❤️";
+
+        }
+
+    </script>
 
 </body>
+
 </html>
