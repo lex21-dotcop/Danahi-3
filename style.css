@@ -260,3 +260,109 @@ button:hover {
         font-size: 25px;
     }
 }
+
+/* CARTA PARA DANAHI */
+
+.carta {
+    width: 90%;
+    max-width: 760px;
+    margin: 80px auto;
+    padding: 60px 45px;
+
+    background: rgba(255, 190, 220, 0.08);
+    border: 1px solid rgba(255, 190, 220, 0.25);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(255, 120, 190, 0.18),
+        inset 0 0 30px rgba(255, 255, 255, 0.03);
+
+    backdrop-filter: blur(12px);
+
+    text-align: left;
+
+    animation: aparecerCarta 1.5s ease;
+}
+
+.flor {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.carta h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 35px;
+
+    color: #ffd1e8;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.4);
+}
+
+.carta-texto {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carta-texto p {
+    margin-bottom: 25px;
+}
+
+.especial {
+    text-align: center;
+    color: #ffc1df;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.final-carta {
+    text-align: center;
+    font-size: 30px;
+    color: #ffd1e8;
+    font-weight: bold;
+}
+
+.carta h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin-top: 20px;
+}
+
+@keyframes aparecerCarta {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .carta {
+        padding: 40px 22px;
+        margin: 50px auto;
+    }
+
+    .carta h2 {
+        font-size: 36px;
+    }
+
+    .carta-texto {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .final-carta {
+        font-size: 25px;
+    }
+}
