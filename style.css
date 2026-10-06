@@ -739,6 +739,6 @@ body {
 }
 
 .sorpresa-contenido {
-    display: none !important;
+    display: none;
     margin-top: 55px;
 }
