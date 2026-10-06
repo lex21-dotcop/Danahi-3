@@ -745,3 +745,103 @@ body {
 .carta-secreta {
     display: none;
 }
+/* NUESTRA CANCIÓN */
+
+.cancion-danahi {
+    width: 90%;
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 65px 45px;
+
+    background: rgba(255, 190, 220, 0.06);
+    border: 1px solid rgba(255, 190, 220, 0.22);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(255, 120, 190, 0.15),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+}
+
+.cancion-danahi h2 {
+    font-size: 42px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.4);
+}
+
+.cancion-intro {
+    max-width: 620px;
+    margin: 0 auto 25px;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.cancion-dedicatoria {
+    color: #ffafd4;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.boton-cancion {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    border: 1px solid rgba(255, 190, 220, 0.4);
+    border-radius: 50px;
+
+    background: rgba(255, 150, 200, 0.12);
+    color: #ffd1e8;
+
+    text-decoration: none;
+    font-size: 17px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.boton-cancion:hover {
+    transform: translateY(-4px);
+
+    background: rgba(255, 150, 200, 0.2);
+
+    box-shadow:
+        0 10px 30px rgba(255, 120, 190, 0.2);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 750px) {
+
+    .cancion-danahi {
+        padding: 50px 22px;
+    }
+
+    .cancion-danahi h2 {
+        font-size: 33px;
+    }
+
+    .cancion-intro {
+        font-size: 17px;
+    }
+
+    .cancion-dedicatoria {
+        font-size: 18px;
+    }
+
+    .boton-cancion {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+}
