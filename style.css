@@ -959,3 +959,308 @@ body {
         font-size: 18px;
     }
 }
+/* NUESTRA HISTORIA */
+
+.historia {
+    width: 90%;
+    max-width: 950px;
+    margin: 80px auto;
+    padding: 70px 45px;
+
+    background: rgba(255, 190, 220, 0.06);
+    border: 1px solid rgba(255, 190, 220, 0.22);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(255, 120, 190, 0.15),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 42px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.4);
+}
+
+.intro-historia {
+    max-width: 650px;
+    margin: 0 auto 60px;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* LÍNEA */
+
+.linea-tiempo {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.linea-tiempo::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: rgba(255, 175, 212, 0.35);
+
+    transform: translateX(-50%);
+}
+
+
+/* MOMENTOS */
+
+.momento {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+
+.fecha {
+    font-size: 15px;
+    letter-spacing: 3px;
+
+    color: #ffafd4;
+
+    font-weight: bold;
+}
+
+
+/* PUNTO */
+
+.punto {
+    width: 52px;
+    height: 52px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 150, 200, 0.12);
+
+    border: 1px solid rgba(255, 190, 220, 0.35);
+
+    box-shadow:
+        0 0 20px rgba(255, 120, 190, 0.2);
+
+    font-size: 22px;
+
+    z-index: 2;
+}
+
+
+/* TEXTO */
+
+.momento-texto {
+    padding: 25px 30px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 190, 220, 0.16);
+
+    border-radius: 22px;
+
+    text-align: left;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.momento-texto:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(255, 120, 190, 0.15);
+}
+
+.momento-texto h3 {
+    margin-bottom: 12px;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    color: #ffd1e8;
+}
+
+.momento-texto p {
+    margin: 0;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.momento-texto .especial {
+    margin-top: 18px;
+
+    color: #ffafd4;
+
+    font-size: 18px;
+}
+
+
+/* MOMENTO ESPECIAL */
+
+.momento-especial .punto {
+    box-shadow:
+        0 0 30px rgba(255, 120, 190, 0.45);
+}
+
+.momento-especial .momento-texto {
+    border-color: rgba(255, 175, 212, 0.35);
+
+    background: rgba(255, 150, 200, 0.07);
+}
+
+
+/* FINAL */
+
+.historia-final {
+    margin-top: 80px;
+
+    padding-top: 50px;
+
+    border-top: 1px solid rgba(255, 190, 220, 0.18);
+}
+
+.historia-final h3 {
+    font-size: 30px;
+
+    font-weight: normal;
+
+    color: #ffd1e8;
+
+    margin-bottom: 20px;
+}
+
+.historia-final p {
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+}
+
+.fecha-historia {
+    margin-top: 35px;
+
+    font-size: 27px;
+
+    letter-spacing: 5px;
+
+    color: #ffd1e8;
+
+    text-shadow:
+        0 0 20px rgba(255, 130, 200, 0.5);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 750px) {
+
+    .historia {
+        padding: 50px 22px;
+    }
+
+    .historia h2 {
+        font-size: 33px;
+    }
+
+    .intro-historia {
+        font-size: 17px;
+        margin-bottom: 45px;
+    }
+
+    .linea-tiempo::before {
+        left: 25px;
+    }
+
+    .momento {
+        display: grid;
+
+        grid-template-columns: 50px 1fr;
+
+        gap: 15px;
+
+        margin-bottom: 35px;
+
+        align-items: start;
+    }
+
+    .fecha {
+        grid-column: 2;
+
+        grid-row: 1;
+
+        text-align: left;
+
+        margin-bottom: 8px;
+    }
+
+    .punto {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .momento-texto {
+        grid-column: 2;
+        grid-row: 2;
+
+        padding: 22px 20px;
+    }
+
+    .momento-texto h3 {
+        font-size: 21px;
+    }
+
+    .momento-texto p {
+        font-size: 16px;
+    }
+
+    .historia-final {
+        margin-top: 55px;
+    }
+
+    .historia-final h3 {
+        font-size: 27px;
+    }
+
+    .fecha-historia {
+        font-size: 21px;
+        letter-spacing: 3px;
+    }
+}
