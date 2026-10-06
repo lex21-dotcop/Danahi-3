@@ -845,3 +845,117 @@ body {
         padding: 15px 25px;
     }
 }
+/* CONTADOR DE AMOR */
+
+.contador-amor {
+    width: 90%;
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 65px 45px;
+
+    background: rgba(255, 190, 220, 0.06);
+    border: 1px solid rgba(255, 190, 220, 0.22);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(255, 120, 190, 0.15),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+}
+
+.contador-amor h2 {
+    font-size: 42px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.4);
+}
+
+.contador-intro {
+    max-width: 620px;
+    margin: 0 auto 40px;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+#contador {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#contador div {
+    min-width: 120px;
+    padding: 22px 15px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 190, 220, 0.18);
+    border-radius: 20px;
+}
+
+#contador span {
+    display: block;
+
+    font-size: 38px;
+    color: #ffd1e8;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.45);
+}
+
+#contador small {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    color: #ffafd4;
+}
+
+.contador-final {
+    margin-top: 35px;
+
+    font-size: 20px;
+    color: #ffafd4;
+}
+
+@media (max-width: 750px) {
+
+    .contador-amor {
+        padding: 50px 22px;
+    }
+
+    .contador-amor h2 {
+        font-size: 33px;
+    }
+
+    .contador-intro {
+        font-size: 17px;
+    }
+
+    #contador {
+        gap: 10px;
+    }
+
+    #contador div {
+        min-width: 90px;
+        padding: 18px 10px;
+    }
+
+    #contador span {
+        font-size: 30px;
+    }
+
+    .contador-final {
+        font-size: 18px;
+    }
+}
