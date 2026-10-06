@@ -637,3 +637,103 @@ body {
         font-size: 21px;
     }
 }
+/* CARTA FINAL */
+
+.carta-final {
+    width: 90%;
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 70px 50px;
+
+    background: rgba(255, 190, 220, 0.06);
+    border: 1px solid rgba(255, 190, 220, 0.22);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(255, 120, 190, 0.15),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+}
+
+.carta-final h2 {
+    font-size: 44px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin-bottom: 40px;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.4);
+}
+
+.carta-final-texto {
+    max-width: 680px;
+    margin: auto;
+}
+
+.carta-final-texto p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.carta-final-texto .especial {
+    color: #ffafd4;
+    font-size: 22px;
+}
+
+.carta-final-texto h3 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin: 35px 0;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.35);
+}
+
+.carta-final-texto .final-carta {
+    font-size: 32px;
+    color: #ffd1e8;
+    margin-top: 45px;
+}
+
+.firma {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #ffafd4;
+    font-style: italic;
+}
+
+/* CARTA FINAL EN CELULAR */
+
+@media (max-width: 750px) {
+
+    .carta-final {
+        padding: 50px 22px;
+        margin: 60px auto;
+    }
+
+    .carta-final h2 {
+        font-size: 34px;
+    }
+
+    .carta-final-texto p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .carta-final-texto .especial {
+        font-size: 20px;
+    }
+
+    .carta-final-texto h3 {
+        font-size: 26px;
+    }
+
+    .carta-final-texto .final-carta {
+        font-size: 28px;
+    }
+}
