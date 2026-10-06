@@ -9,40 +9,123 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #12001f, #35002f, #12001f);
-    font-family: Arial, sans-serif;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at top, #4b164c, transparent 45%),
+        linear-gradient(135deg, #100010, #24001f, #090009);
+
+    font-family: Georgia, serif;
     color: white;
     text-align: center;
 }
 
-.contenedor {
+.portada {
     width: 90%;
     max-width: 700px;
-    padding: 50px 30px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 40px rgba(255, 0, 128, 0.25);
-    backdrop-filter: blur(10px);
-}
+    padding: 60px 30px;
 
-h1 {
-    font-size: 50px;
-    margin-bottom: 25px;
-}
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
-p {
-    font-size: 20px;
-    line-height: 1.7;
-    margin-bottom: 15px;
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 40px rgba(255, 0, 150, 0.2),
+        inset 0 0 30px rgba(255, 255, 255, 0.03);
+
+    backdrop-filter: blur(12px);
+
+    position: relative;
+    z-index: 2;
 }
 
 .corazon {
-    font-size: 60px;
+    font-size: 70px;
     margin-bottom: 20px;
+
     animation: latido 1.5s infinite;
 }
 
+.pequeno {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: normal;
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 0 10px rgba(255, 150, 220, 0.5),
+        0 0 30px rgba(255, 50, 180, 0.3);
+}
+
+.linea {
+    width: 80px;
+    height: 2px;
+    margin: 0 auto 25px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.frase {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+button {
+    margin-top: 30px;
+
+    padding: 15px 28px;
+
+    border: none;
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#mensaje {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.corazones {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    opacity: 0.15;
+
+    font-size: 25px;
+
+    pointer-events: none;
+}
+
 @keyframes latido {
+
     0%, 100% {
         transform: scale(1);
     }
@@ -53,11 +136,20 @@ p {
 }
 
 @media (max-width: 600px) {
-    h1 {
-        font-size: 38px;
+
+    .portada {
+        padding: 45px 20px;
     }
 
-    p {
+    h1 {
+        font-size: 50px;
+    }
+
+    .frase {
         font-size: 17px;
+    }
+
+    .corazon {
+        font-size: 55px;
     }
 }
