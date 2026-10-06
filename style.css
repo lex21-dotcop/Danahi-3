@@ -504,3 +504,136 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+/* 100 RAZONES PARA AMARTE */
+
+.razones {
+    width: 90%;
+    max-width: 950px;
+    margin: 80px auto;
+    padding: 60px 45px;
+
+    background: rgba(255, 190, 220, 0.06);
+    border: 1px solid rgba(255, 190, 220, 0.22);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 50px rgba(255, 120, 190, 0.15),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+}
+
+.razones h2 {
+    font-size: 44px;
+    font-weight: normal;
+    color: #ffd1e8;
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 15px rgba(255, 130, 200, 0.4);
+}
+
+.intro-razones {
+    max-width: 600px;
+    margin: 0 auto 45px;
+
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.razones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.razon {
+    padding: 28px 20px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 190, 220, 0.15);
+    border-radius: 20px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.razon:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 30px rgba(255, 120, 190, 0.15);
+}
+
+.razon span {
+    display: block;
+
+    font-size: 17px;
+    color: #ffafd4;
+
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.razon p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.razon-final {
+    margin-top: 50px;
+    padding-top: 35px;
+
+    border-top: 1px solid rgba(255, 190, 220, 0.15);
+}
+
+.razon-final span {
+    display: block;
+
+    font-size: 60px;
+    color: #ffd1e8;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 0 20px rgba(255, 130, 200, 0.5);
+}
+
+.razon-final p {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.razon-final h3 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #ffd1e8;
+    line-height: 1.5;
+}
+
+@media (max-width: 750px) {
+
+    .razones {
+        padding: 45px 22px;
+    }
+
+    .razones h2 {
+        font-size: 34px;
+    }
+
+    .razones-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-razones {
+        font-size: 17px;
+    }
+
+    .razon-final h3 {
+        font-size: 21px;
+    }
+}
