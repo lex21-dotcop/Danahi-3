@@ -737,3 +737,8 @@ body {
         font-size: 28px;
     }
 }
+
+.sorpresa-contenido {
+    display: none !important;
+    margin-top: 55px;
+}
