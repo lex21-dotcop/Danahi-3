@@ -614,7 +614,30 @@
         }
     }
 </script>
+<script>
+    let cartasAbiertas = 0;
 
+    function mostrarSorpresa() {
+        document.getElementById("sorpresa-contenido").style.display = "block";
+        document.querySelector(".boton-sorpresa").style.display = "none";
+    }
+
+    function abrirCarta(numero) {
+        const carta = document.getElementById("carta-" + numero);
+
+        if (carta.style.display === "block") {
+            carta.style.display = "none";
+            return;
+        }
+
+        carta.style.display = "block";
+        cartasAbiertas++;
+
+        if (cartasAbiertas >= 3) {
+            document.getElementById("final-secreto").style.display = "block";
+        }
+    }
+</script>
 </body>
 
 </html>
